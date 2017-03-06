@@ -1,6 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/*
+ * Form Process Validation
+ * Load form input data
+ * Parse input Data through Data8 Email and Phone Validator
+ * Based on Config File decide API Integration Process
+ * 1. Send via email using sendgrid
+ * 2. Inject into Hubsolv Database
+ * 3. Export as JSON array into internal Database via command live execution
+ */
+
 class Process extends CI_Controller {
 
 	public function __construct(){
